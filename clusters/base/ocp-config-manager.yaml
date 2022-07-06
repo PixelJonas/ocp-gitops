@@ -10,7 +10,7 @@ spec:
   source:
     path: environments/base
     repoURL: https://github.com/pixeljonas/ocp-gitops.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       selfHeal: true
