@@ -4,5 +4,6 @@ kind: Kustomization
 namespace: openshift-gitops
 
 bases:
-  - ../../manifests/groups-and-membership/overlays/public
+  - ../../manifests/login-theme/base
 
+  - ../../manifests/groups-and-membership/overlays/public
