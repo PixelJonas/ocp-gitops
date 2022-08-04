@@ -7,3 +7,4 @@ bases:
   - ../../manifests/login-theme/base
 
   - ../../manifests/groups-and-membership/overlays/public
+  - ../../manifests/sealed-secrets/base
