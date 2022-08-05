@@ -1,4 +1,6 @@
 To-do list:
+- install gitops operator
+- rbac 
 - alertmanager - gchat/slack
 - notification argo -gchat/slack
 - app-scoped argocd

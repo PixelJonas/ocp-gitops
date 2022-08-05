@@ -19,3 +19,7 @@
 - op: add
   path: /users/-
   value: "ruizhang@redhat.com"
+- op: add
+  path: /users/-
+  value: "system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller"
+
