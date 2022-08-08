@@ -1,21 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: calert
+  name: alertmanager
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   destination:
-    namespace: calert
+    namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/calert/base/apps
+    path: manifests/alertmanager/base/apps
     repoURL: https://github.com/PixelJonas/ocp-gitops
     targetRevision: main
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: false
-    syncOptions:
-      - CreateNamespace=true
+    
+    

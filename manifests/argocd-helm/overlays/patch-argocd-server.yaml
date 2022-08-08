@@ -1,0 +1,13 @@
+- op: add
+  path: /spec/source/helm
+  value:
+    values: |
+      nameOverride: custom-argo
+      redis:  
+        securityContext:
+          runAsUser: 1000790001
+      openshift:
+        enabled: true
+      server:  
+        route:
+          enabled: true     

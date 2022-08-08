@@ -8,4 +8,6 @@ bases:
   - ../../manifests/groups-and-membership/overlays/public
   - ../../manifests/sealed-secrets/base
   - ../../manifests/calert/base
+  - ../../manifests/alertmanager/base
+  - ../../manifests/argocd-helm/overlays
 
