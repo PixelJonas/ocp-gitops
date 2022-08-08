@@ -5,7 +5,7 @@
       nameOverride: custom-argo
       redis:  
         securityContext:
-          runAsUser: 1000790001
+          runAsUser: 1000769997
       openshift:
         enabled: true
       server:  
