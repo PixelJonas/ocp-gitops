@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: calert-config
-  namespace: argocd
+  namespace: calert
 data:
   calert-config.toml: | 
     [app]

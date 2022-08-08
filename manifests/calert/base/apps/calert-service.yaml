@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: calert
-  namespace: argocd
+  namespace: calert
   labels:
     app.kubernetes.io/instance: calert
 spec:
