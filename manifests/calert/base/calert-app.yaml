@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: calert
+spec:
+  destination:
+    namespace: calert
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: manifests/calert/base/apps
+    repoURL: https://github.com/PixelJonas/ocp-gitops
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true

@@ -1,2 +1,3 @@
-/manifests/calert
 /manifests/ntp-config/base/99-worker-*
+/manifests/alertmanager
+/manifests/argocd-helm
