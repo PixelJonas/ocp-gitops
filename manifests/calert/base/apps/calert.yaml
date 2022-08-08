@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1 
 metadata:
   name: calert
-  namespace: argocd   
+  namespace: calert  
 spec:
   replicas: 1
   selector:
