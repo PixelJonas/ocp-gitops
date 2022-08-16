@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cert-manager-operator
+spec:
+  project: default
+  source:
+    path: /manifests/cert-manager/operator/base/apps
+    repoURL: https://github.com/PixelJonas/ocp-gitops
+    targetRevision: main
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: openshift-cert-manager-operator
