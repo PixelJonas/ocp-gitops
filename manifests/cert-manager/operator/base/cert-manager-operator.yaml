@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    path: /manifests/cert-manager/operator/base/apps
+    path: manifests/cert-manager/operator/base/apps
     repoURL: https://github.com/PixelJonas/ocp-gitops
     targetRevision: main
   destination:
