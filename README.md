@@ -5,4 +5,4 @@ To-do list:
   - configure notification controller
 
 - NTP setting for hetzner ?
-- cert-manager ?
+

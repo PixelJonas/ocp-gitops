@@ -10,4 +10,6 @@ bases:
   - ../../manifests/calert/base
   - ../../manifests/alertmanager/base
   - ../../manifests/argocd-helm/overlays
+  - ../../manifests/cert-manager/operator/base
+  - ../../manifests/cert-manager/cert-manager-webhook/base
 

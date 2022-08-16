@@ -1,1 +1,2 @@
 /manifests/ntp-config/base/99-worker-*
+/manifests/cert-manager/certs
