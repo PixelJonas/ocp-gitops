@@ -2,6 +2,16 @@
   path: /spec/source/helm
   value:
     values: |
+      nameOverride: custom-argo
+      redis:  
+        securityContext:
+          runAsUser: 1000769997
+      openshift:
+        enabled: true
+      server:  
+        route:
+          enabled: true     
+
       notifications:
         secret:
           items:
