@@ -9,7 +9,7 @@ bases:
   - ../../manifests/sealed-secrets/base
   - ../../manifests/calert/base
   - ../../manifests/alertmanager/base
-  - ../../manifests/argocd-helm/overlays
+  - ../../manifests/argocd-helm/overlays/argocd-notifications
   - ../../manifests/cert-manager/operator/base
   - ../../manifests/cert-manager/cert-manager-webhook/base
 
