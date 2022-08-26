@@ -10,7 +10,8 @@
         enabled: true
       server:  
         route:
-          enabled: true     
+          enabled: true   
+          hostname: "argocd-custom-argo-server-argocd.apps.ocp4.janz.cloud"  
 
       notifications:
         secret:
@@ -257,6 +258,7 @@
                   {{end}}
                   ]
                 }]
+
         triggers:
           trigger.on-deployed: |
             - description: Application is synced and healthy. Triggered once per commit.
@@ -290,12 +292,14 @@
               - app-sync-succeeded
               when: app.status.operationState.phase in ['Succeeded']
 
-          defaultTriggers: |
-            - on-sync-status-unknown
-
         bots:
           slack:
             enabled: true
+            service:
+              port: 1234
+            serviceAccount:
+              name: argocd-notifications-slack-bot
+
 
       
       
