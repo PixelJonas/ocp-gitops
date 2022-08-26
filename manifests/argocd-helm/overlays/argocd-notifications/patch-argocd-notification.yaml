@@ -14,10 +14,6 @@
           hostname: "argocd-custom-argo-server-argocd.apps.ocp4.janz.cloud"  
 
       notifications:
-        secret:
-          items:
-            slack-token: eG94Yi05Mzg4NjY0NjAwNTEtMTA3MzI5MDgyODQ4Ny04QnU2ZXVmU2xKclZrMTM0TlJzdjdiQ04=
-
         notifiers:
           service.slack: |
             token: $slack-token
