@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/calert/base/apps
+    path: manifests/apps/calert/base/apps
     repoURL: https://github.com/PixelJonas/ocp-gitops
     targetRevision: main
   syncPolicy:

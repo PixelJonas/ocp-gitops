@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/alertmanager/base/apps
+    path: manifests/cluster-config/alertmanager/base/
     repoURL: https://github.com/PixelJonas/ocp-gitops
     targetRevision: main
     
