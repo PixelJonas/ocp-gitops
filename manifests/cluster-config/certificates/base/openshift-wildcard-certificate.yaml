@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: wildcards-apps-janz-cloud
+  name: openshift-wildcard
   namespace: openshift-ingress
 spec:
   duration: 1440h0m0s
@@ -11,5 +11,5 @@ spec:
     - '*.apps.ocp4.janz.cloud'
   issuerRef:
     kind: ClusterIssuer
-    name: letsencrypt-staging
-  secretName: wildcards-apps-janz-cloud
+    name: letsencrypt-prod
+  secretName: openshift-wildcard-certificate
