@@ -3,3 +3,5 @@ kind: Kustomization
 
 resources:
   - alertmanager-config.yaml
+  - annotate-secret-job.yaml
+  - annotate-secret-sa.yaml
