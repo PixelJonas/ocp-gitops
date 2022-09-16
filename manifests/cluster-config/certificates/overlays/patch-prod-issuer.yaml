@@ -1,0 +1,7 @@
+- op: replace
+  path: /metadata/name
+  value: letsencrypt-prod
+
+- op: replace
+  path: /spec/server
+  value: https://acme-v02.api.letsencrypt.org/directory

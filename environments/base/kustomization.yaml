@@ -3,12 +3,9 @@ kind: Kustomization
 
 
 bases:
-  - ../../manifests/login-theme/base
-  - ../../manifests/groups-and-membership/overlays/public
-  - ../../manifests/ntp-config/base
-  - ../../manifests/sealed-secrets/base
-  - ../../manifests/calert/base
-  - ../../manifests/alertmanager/base
-  - ../../manifests/argocd-helm/overlays/argocd-notifications
-  - ../../manifests/cert-manager/operator/base
+  - ../../manifests/apps/login-theme/base
+  - ../../manifests/apps/groups-and-membership/base
+  - ../../manifests/cluster-config/ntp-config/base
+  - ../../manifests/apps/sealed-secrets/base
+  - ../../manifests/apps/cert-manager/base
 

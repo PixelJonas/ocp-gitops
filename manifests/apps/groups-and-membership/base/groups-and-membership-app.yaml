@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: login-theme
+  name: groups-and-membership
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 spec:
@@ -10,6 +10,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/login-theme/base/apps
+    path: manifests/cluster-config/groups-and-membership/overlays/public
     repoURL: https://github.com/pixeljonas/ocp-gitops.git
     targetRevision: main

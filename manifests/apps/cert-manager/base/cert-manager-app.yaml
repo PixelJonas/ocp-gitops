@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: groups-and-membership
+  name: cert-manager
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/groups-and-membership/base/apps
+    path: manifests/cluster-config/cert-manager-operator/base
     repoURL: https://github.com/pixeljonas/ocp-gitops.git
     targetRevision: main
