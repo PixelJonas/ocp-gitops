@@ -11,5 +11,6 @@ bases:
   - ../../manifests/apps/certificates/base
   - ../../manifests/apps/calert/base
   - ../../manifests/apps/alertmanager/base
+  - ../../manifests/apps/argocd-helm/overlays/argocd-server
   
 
