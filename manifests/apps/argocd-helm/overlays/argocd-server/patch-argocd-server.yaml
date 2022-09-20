@@ -1,9 +1,4 @@
 - op: add
-  path: /metadata/annotations
-  value:
-    openshift.io/sa.scc.supplemental-groups: 1000760000/10000
-    openshift.io/sa.scc.uid-range: 1000760000/1000
-- op: add
   path: /spec/source/helm
   value:
     values: |

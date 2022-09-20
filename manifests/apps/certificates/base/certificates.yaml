@@ -10,6 +10,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/cluster-config/certificates/base
+    path: manifests/cluster-config/certificates/aggregate
     repoURL: https://github.com/pixeljonas/ocp-gitops.git
     targetRevision: main
