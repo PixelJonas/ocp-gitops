@@ -10,6 +10,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/cluster-config/cert-manager-operator/operator
+    path: manifests/cluster-config/cert-manager-operator/operator/base
     repoURL: https://github.com/pixeljonas/ocp-gitops.git
     targetRevision: main
