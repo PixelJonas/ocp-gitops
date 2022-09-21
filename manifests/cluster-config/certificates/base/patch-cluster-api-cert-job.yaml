@@ -54,7 +54,7 @@ spec:
         - image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
           env:
             - name: API_HOST_NAME
-              value: api.home.ocplab.com
+              value: api.ocp4.janz.cloud
           command:
             - /bin/bash
             - -c
