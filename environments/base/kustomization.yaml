@@ -9,7 +9,6 @@ bases:
   - ../../manifests/apps/sealed-secrets/base
   - ../../manifests/apps/cert-manager/base
   - ../../manifests/apps/certificates/base
-  - ../../manifests/apps/calert/base
   - ../../manifests/apps/alertmanager/base
   - ../../manifests/apps/argocd-helm/overlays/argocd-server
   
